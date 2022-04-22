@@ -99,7 +99,7 @@ def get_mac(file_path, i, j):
         # --------------调用函数把循环后的字典添加进数组中储存----------------
         group.append(netinfo)
         print(f"已执行{i}次")
-        if i > 255:  # 第二位IP终止值
+        if i > 255:  # 第四位IP终止值
             update_file(file, old_str1, new_str1)  # 重置第四位IP
             i = 0
         if i == 255:
